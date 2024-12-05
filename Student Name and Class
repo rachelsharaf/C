@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+
+//implement student structure
+struct Student {
+    char studentName [50];
+    int classAmount;
+};
+
+//Function prototype
+void printStudent(struct Student aStudent);
+
+int main() {
+    //Declaring a student object
+    struct Student bestStudent;
+    
+    //Asssigning values to the student object
+    strcpy(bestStudent.studentName, "H rattanasook");
+    bestStudent.classAmount = 3;
+
+    //call the  printStudent function
+    printStudent(bestStudent));
+    return 0;
+}
+
+//Create a function to print out a student information
+void printStudent(struct Student aStudent) {
+    printf("Student name is %s.", aStudent.studentName);
+    printf("\nStudent takes %d classes.", aStudent.classAmount);
+}
